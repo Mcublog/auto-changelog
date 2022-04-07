@@ -37,7 +37,7 @@ def validate_template(ctx, param, value):
 @click.option(
     "-o",
     "--output",
-    type=click.File("w"),
+    type=click.File("w", encoding="utf-8"),
     default="CHANGELOG.md",
     help="The place to save the generated changelog [Default: CHANGELOG.md]",
 )
